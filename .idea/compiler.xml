@@ -8,17 +8,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="_01-ThirdLayerApplication" />
+        <module name="02-MyBatis-12-More-Table" />
+        <module name="02-MyBatis-11-ORM" />
         <module name="02-MyBatis-08-Binding" />
         <module name="02-MyBatis-10-Util" />
         <module name="02-MyBatis-09-CRUD" />
         <module name="02-MyBatis-13-Dynamic-SQL" />
-        <module name="02-MyBatis-12-More-Table" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="02-MyBatis-08-Binding" target="1.8" />
       <module name="02-MyBatis-09-CRUD" target="1.8" />
       <module name="02-MyBatis-10-Util" target="1.8" />
+      <module name="02-MyBatis-11-ORM" target="1.8" />
       <module name="02-MyBatis-12-More-Table" target="1.8" />
       <module name="02-MyBatis-13-Dynamic-SQL" target="1.8" />
       <module name="_01-ThirdLayerApplication" target="1.8" />

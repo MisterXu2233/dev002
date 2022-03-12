@@ -16,6 +16,7 @@
         <option value="$PROJECT_DIR$/02-MyBatis-13-Dynamic-SQL/pom.xml" />
         <option value="$PROJECT_DIR$/02-MyBatis-12-More-Table/pom.xml" />
         <option value="$PROJECT_DIR$/02-MyBatis-11-ORM/pom.xml" />
+        <option value="$PROJECT_DIR$/02-MyBatis-14-Cache/pom.xml" />
       </list>
     </option>
   </component>

@@ -21,6 +21,8 @@
     <file url="file://$PROJECT_DIR$/02-MyBatis-15-PageHelper/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/02-MyBatis-16-Druid/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/02-MyBatis-16-Druid/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02-MyBatis-17-Annotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02-MyBatis-17-Annotation/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

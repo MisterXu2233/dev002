@@ -19,6 +19,7 @@
         <option value="$PROJECT_DIR$/02-MyBatis-14-Cache/pom.xml" />
         <option value="$PROJECT_DIR$/02-MyBatis-15-PageHelper/pom.xml" />
         <option value="$PROJECT_DIR$/02-MyBatis-16-Druid/pom.xml" />
+        <option value="$PROJECT_DIR$/02-MyBatis-17-Annotation/pom.xml" />
       </list>
     </option>
   </component>

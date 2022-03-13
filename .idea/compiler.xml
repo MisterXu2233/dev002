@@ -17,6 +17,7 @@
         <module name="02-MyBatis-10-Util" />
         <module name="02-MyBatis-09-CRUD" />
         <module name="02-MyBatis-13-Dynamic-SQL" />
+        <module name="02-MyBatis-17-Annotation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -29,6 +30,7 @@
       <module name="02-MyBatis-14-Cache" target="1.8" />
       <module name="02-MyBatis-15-PageHelper" target="1.8" />
       <module name="02-MyBatis-16-Druid" target="1.8" />
+      <module name="02-MyBatis-17-Annotation" target="1.8" />
       <module name="_01-ThirdLayerApplication" target="1.8" />
       <module name="a" target="1.8" />
       <module name="untitled" target="1.8" />

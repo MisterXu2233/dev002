@@ -5,6 +5,7 @@
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/01-ThirdLayerApplication" />
+    <file type="web" url="file://$PROJECT_DIR$/03-Spring-00-ThreeLayerApplication" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -22,6 +23,7 @@
         <option value="$PROJECT_DIR$/02-MyBatis-17-Annotation/pom.xml" />
         <option value="$PROJECT_DIR$/02-MyBatis-18-Lazy/pom.xml" />
         <option value="$PROJECT_DIR$/02-MyBatis-19-Generator/pom.xml" />
+        <option value="$PROJECT_DIR$/03-Spring-00-ThreeLayerApplication/pom.xml" />
       </list>
     </option>
   </component>

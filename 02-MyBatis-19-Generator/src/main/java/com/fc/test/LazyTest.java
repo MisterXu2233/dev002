@@ -23,5 +23,6 @@ public class LazyTest {
     List<Student> students = mapper.selectByExampleWithBLOBs(example);;
 
     System.out.println(students);
+
 }
 }

@@ -17,6 +17,7 @@
         <module name="02-MyBatis-16-Druid" />
         <module name="02-MyBatis-19-Generator" />
         <module name="02-MyBatis-14-Cache" />
+        <module name="03-Spring-00-ThreeLayerApplication" />
         <module name="02-MyBatis-11-ORM" />
         <module name="02-MyBatis-18-Lazy" />
         <module name="02-MyBatis-08-Binding" />
@@ -35,6 +36,7 @@
       <module name="02-MyBatis-17-Annotation" target="1.8" />
       <module name="02-MyBatis-18-Lazy" target="1.8" />
       <module name="02-MyBatis-19-Generator" target="1.8" />
+      <module name="03-Spring-00-ThreeLayerApplication" target="1.8" />
       <module name="_01-ThirdLayerApplication" target="1.8" />
       <module name="a" target="1.8" />
       <module name="untitled" target="1.8" />

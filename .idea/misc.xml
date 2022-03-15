@@ -28,6 +28,7 @@
         <option value="$PROJECT_DIR$/03-Spring-02-Bean-Name/pom.xml" />
         <option value="$PROJECT_DIR$/03-Spring-03-CreateBean/pom.xml" />
         <option value="$PROJECT_DIR$/03-Spring-04-Scope/pom.xml" />
+        <option value="$PROJECT_DIR$/03-Spring-05-Lifecycle/pom.xml" />
       </list>
     </option>
   </component>

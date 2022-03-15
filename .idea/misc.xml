@@ -26,6 +26,8 @@
         <option value="$PROJECT_DIR$/03-Spring-00-ThreeLayerApplication/pom.xml" />
         <option value="$PROJECT_DIR$/03-Spring-01-Start/pom.xml" />
         <option value="$PROJECT_DIR$/03-Spring-02-Bean-Name/pom.xml" />
+        <option value="$PROJECT_DIR$/03-Spring-03-CreateBean/pom.xml" />
+        <option value="$PROJECT_DIR$/03-Spring-04-Scope/pom.xml" />
       </list>
     </option>
   </component>

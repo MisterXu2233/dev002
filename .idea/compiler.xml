@@ -24,6 +24,7 @@
         <module name="03-Spring-03-CreateBean" />
         <module name="03-Spring-00-ThreeLayerApplication" />
         <module name="02-MyBatis-11-ORM" />
+        <module name="03-Spring-06-Lazy" />
         <module name="02-MyBatis-18-Lazy" />
         <module name="02-MyBatis-08-Binding" />
       </profile>
@@ -47,6 +48,7 @@
       <module name="03-Spring-03-CreateBean" target="1.8" />
       <module name="03-Spring-04-Scope" target="1.8" />
       <module name="03-Spring-05-Lifecycle" target="1.8" />
+      <module name="03-Spring-06-Lazy" target="1.8" />
       <module name="_01-ThirdLayerApplication" target="1.8" />
       <module name="a" target="1.8" />
       <module name="untitled" target="1.8" />

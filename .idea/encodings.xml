@@ -39,6 +39,8 @@
     <file url="file://$PROJECT_DIR$/03-Spring-04-Scope/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/03-Spring-05-Lifecycle/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/03-Spring-05-Lifecycle/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03-Spring-06-Lazy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03-Spring-06-Lazy/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

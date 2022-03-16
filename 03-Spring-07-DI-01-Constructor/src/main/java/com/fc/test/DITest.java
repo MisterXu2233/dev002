@@ -17,5 +17,7 @@ public class DITest {
         Person person = applicationContext.getBean(Person.class);
 
         System.out.println(person);
+
+
     }
 }

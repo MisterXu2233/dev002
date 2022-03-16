@@ -10,6 +10,7 @@
         <module name="_01-ThirdLayerApplication" />
         <module name="02-MyBatis-12-More-Table" />
         <module name="03-Spring-01-Start" />
+        <module name="03-Spring-07-DI-02-Set" />
         <module name="03-Spring-07-DI-01-Constructor" />
         <module name="02-MyBatis-15-PageHelper" />
         <module name="03-Spring-05-Lifecycle" />
@@ -51,6 +52,7 @@
       <module name="03-Spring-05-Lifecycle" target="1.8" />
       <module name="03-Spring-06-Lazy" target="1.8" />
       <module name="03-Spring-07-DI-01-Constructor" target="1.8" />
+      <module name="03-Spring-07-DI-02-Set" target="1.8" />
       <module name="_01-ThirdLayerApplication" target="1.8" />
       <module name="a" target="1.8" />
       <module name="untitled" target="1.8" />

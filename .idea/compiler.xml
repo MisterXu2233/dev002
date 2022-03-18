@@ -9,26 +9,30 @@
         <outputRelativeToContentRoot value="true" />
         <module name="_01-ThirdLayerApplication" />
         <module name="02-MyBatis-12-More-Table" />
-        <module name="03-Spring-01-Start" />
         <module name="03-Spring-07-DI-02-Set" />
-        <module name="03-Spring-07-DI-01-Constructor" />
         <module name="02-MyBatis-15-PageHelper" />
         <module name="03-Spring-05-Lifecycle" />
+        <module name="03-Spring-08-JDBC-02-Annotation" />
         <module name="02-MyBatis-10-Util" />
         <module name="02-MyBatis-09-CRUD" />
         <module name="02-MyBatis-13-Dynamic-SQL" />
         <module name="02-MyBatis-17-Annotation" />
-        <module name="02-MyBatis-16-Druid" />
+        <module name="03-Spring-07-DI-04-ThirdLayerApplication" />
         <module name="03-Spring-02-Bean-Name" />
         <module name="02-MyBatis-19-Generator" />
+        <module name="03-Spring-08-JDBC-01-XML" />
         <module name="02-MyBatis-14-Cache" />
         <module name="03-Spring-04-Scope" />
         <module name="03-Spring-07-DI-03-ComplexType" />
         <module name="03-Spring-03-CreateBean" />
-        <module name="03-Spring-00-ThreeLayerApplication" />
         <module name="02-MyBatis-11-ORM" />
         <module name="03-Spring-06-Lazy" />
         <module name="02-MyBatis-18-Lazy" />
+        <module name="03-Spring-01-Start" />
+        <module name="03-Spring-07-DI-01-Constructor" />
+        <module name="03-Spring-07-DI-05-Annotation" />
+        <module name="02-MyBatis-16-Druid" />
+        <module name="03-Spring-00-ThreeLayerApplication" />
         <module name="02-MyBatis-08-Binding" />
       </profile>
     </annotationProcessing>
@@ -55,9 +59,16 @@
       <module name="03-Spring-07-DI-01-Constructor" target="1.8" />
       <module name="03-Spring-07-DI-02-Set" target="1.8" />
       <module name="03-Spring-07-DI-03-ComplexType" target="1.8" />
+      <module name="03-Spring-07-DI-04-ThirdLayerApplication" target="1.8" />
+      <module name="03-Spring-07-DI-05-Annotation" target="1.8" />
+      <module name="03-Spring-08-JDBC-01-XML" target="1.8" />
+      <module name="03-Spring-08-JDBC-02-Annotation" target="1.8" />
       <module name="_01-ThirdLayerApplication" target="1.8" />
       <module name="a" target="1.8" />
       <module name="untitled" target="1.8" />
+      <module name="untitled1" target="1.8" />
+      <module name="untitled12" target="1.8" />
+      <module name="untitled2" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

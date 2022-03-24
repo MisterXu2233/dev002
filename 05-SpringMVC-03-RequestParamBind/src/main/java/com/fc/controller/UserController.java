@@ -14,7 +14,7 @@ public class UserController {
         return "/success.jsp";
     }
 
-    @RequestMapping("testObject")
+    @RequestMapping( "testObject")
     public String testObject(User user) {
         System.out.println(user);
 

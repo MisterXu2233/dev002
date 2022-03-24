@@ -63,6 +63,14 @@
     <file url="file://$PROJECT_DIR$/03-Spring-09-Aop-02-Annotation/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/03-Spring-10-Transaction-01-Programming/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/03-Spring-10-Transaction-01-Programming/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03-Spring-10-Transaction-02-XML/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03-Spring-10-Transaction-02-XML/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05-SpringMVC-01-Start/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05-SpringMVC-01-Start/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05-SpringMVC-02-RequestMapping/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05-SpringMVC-02-RequestMapping/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05-SpringMVC-03-RequestParamBind/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05-SpringMVC-03-RequestParamBind/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

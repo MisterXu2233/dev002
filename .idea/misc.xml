@@ -10,6 +10,7 @@
     <file type="web" url="file://$PROJECT_DIR$/05-SpringMVC-02-RequestMapping" />
     <file type="web" url="file://$PROJECT_DIR$/05-SpringMVC-03-RequestParamBind" />
     <file type="web" url="file://$PROJECT_DIR$/05-SpringMVC-04-Encoding" />
+    <file type="web" url="file://$PROJECT_DIR$/05-SpringMVC-05-DateConverter" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -50,6 +51,7 @@
         <option value="$PROJECT_DIR$/05-SpringMVC-02-RequestMapping/pom.xml" />
         <option value="$PROJECT_DIR$/05-SpringMVC-03-RequestParamBind/pom.xml" />
         <option value="$PROJECT_DIR$/05-SpringMVC-04-Encoding/pom.xml" />
+        <option value="$PROJECT_DIR$/05-SpringMVC-05-DateConverter/pom.xml" />
       </list>
     </option>
   </component>

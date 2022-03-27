@@ -13,6 +13,7 @@
     <file type="web" url="file://$PROJECT_DIR$/05-SpringMVC-05-DateConverter" />
     <file type="web" url="file://$PROJECT_DIR$/05-SpringMVC-06-ViewResolver" />
     <file type="web" url="file://$PROJECT_DIR$/05-SpringMVC-07-ResponseDate" />
+    <file type="web" url="file://$PROJECT_DIR$/05-SpringMVC-08-Annotation" />
     <file type="web" url="file://$PROJECT_DIR$/../dev02/00-Layui" />
   </component>
   <component name="MavenProjectsManager">
@@ -58,6 +59,7 @@
         <option value="$PROJECT_DIR$/05-SpringMVC-06-ViewResolver/pom.xml" />
         <option value="$PROJECT_DIR$/../dev02/00-Layui/pom.xml" />
         <option value="$PROJECT_DIR$/05-SpringMVC-07-ResponseDate/pom.xml" />
+        <option value="$PROJECT_DIR$/05-SpringMVC-08-Annotation/pom.xml" />
       </list>
     </option>
   </component>

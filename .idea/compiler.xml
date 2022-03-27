@@ -13,6 +13,7 @@
         <module name="02-MyBatis-12-More-Table" />
         <module name="03-Spring-07-DI-02-Set" />
         <module name="05-SpringMVC-01-Start" />
+        <module name="05-SpringMVC-07-ResponseDate" />
         <module name="02-MyBatis-15-PageHelper" />
         <module name="03-Spring-05-Lifecycle" />
         <module name="05-SpringMVC-06-ViewResolver" />
@@ -87,6 +88,7 @@
       <module name="05-SpringMVC-04-Encoding" target="1.8" />
       <module name="05-SpringMVC-05-DateConverter" target="1.8" />
       <module name="05-SpringMVC-06-ViewResolver" target="1.8" />
+      <module name="05-SpringMVC-07-ResponseDate" target="1.8" />
       <module name="_01-ThirdLayerApplication" target="1.8" />
       <module name="a" target="1.8" />
       <module name="untitled" target="1.8" />

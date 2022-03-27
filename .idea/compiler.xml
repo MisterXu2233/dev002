@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="00-Layui" />
         <module name="03-Spring-09-Aop-00-Start" />
         <module name="_01-ThirdLayerApplication" />
         <module name="02-MyBatis-12-More-Table" />
@@ -14,6 +15,7 @@
         <module name="05-SpringMVC-01-Start" />
         <module name="02-MyBatis-15-PageHelper" />
         <module name="03-Spring-05-Lifecycle" />
+        <module name="05-SpringMVC-06-ViewResolver" />
         <module name="03-Spring-08-JDBC-02-Annotation" />
         <module name="03-Spring-09-Aop-02-Annotation" />
         <module name="02-MyBatis-10-Util" />
@@ -47,6 +49,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
+      <module name="00-Layui" target="1.8" />
       <module name="02-MyBatis-08-Binding" target="1.8" />
       <module name="02-MyBatis-09-CRUD" target="1.8" />
       <module name="02-MyBatis-10-Util" target="1.8" />
@@ -83,6 +86,7 @@
       <module name="05-SpringMVC-03-RequestParamBind" target="1.8" />
       <module name="05-SpringMVC-04-Encoding" target="1.8" />
       <module name="05-SpringMVC-05-DateConverter" target="1.8" />
+      <module name="05-SpringMVC-06-ViewResolver" target="1.8" />
       <module name="_01-ThirdLayerApplication" target="1.8" />
       <module name="a" target="1.8" />
       <module name="untitled" target="1.8" />

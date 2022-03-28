@@ -18,6 +18,7 @@
         <module name="03-Spring-05-Lifecycle" />
         <module name="05-SpringMVC-06-ViewResolver" />
         <module name="05-SpringMVC-08-Annotation" />
+        <module name="05-SpringMVC-09-Ajax" />
         <module name="03-Spring-08-JDBC-02-Annotation" />
         <module name="03-Spring-09-Aop-02-Annotation" />
         <module name="02-MyBatis-10-Util" />
@@ -91,6 +92,7 @@
       <module name="05-SpringMVC-06-ViewResolver" target="1.8" />
       <module name="05-SpringMVC-07-ResponseDate" target="1.8" />
       <module name="05-SpringMVC-08-Annotation" target="1.8" />
+      <module name="05-SpringMVC-09-Ajax" target="1.8" />
       <module name="_01-ThirdLayerApplication" target="1.8" />
       <module name="a" target="1.8" />
       <module name="untitled" target="1.8" />

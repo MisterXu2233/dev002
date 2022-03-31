@@ -29,6 +29,7 @@
         <module name="05-SpringMVC-03-RequestParamBind" />
         <module name="03-Spring-02-Bean-Name" />
         <module name="02-MyBatis-19-Generator" />
+        <module name="06-SSM-01-Wyy" />
         <module name="03-Spring-08-JDBC-01-XML" />
         <module name="02-MyBatis-14-Cache" />
         <module name="03-Spring-04-Scope" />
@@ -38,6 +39,7 @@
         <module name="03-Spring-10-Transaction-01-Programming" />
         <module name="02-MyBatis-11-ORM" />
         <module name="03-Spring-06-Lazy" />
+        <module name="06-SSM-02-Wyy" />
         <module name="02-MyBatis-18-Lazy" />
         <module name="03-Spring-01-Start" />
         <module name="03-Spring-07-DI-01-Constructor" />
@@ -46,6 +48,7 @@
         <module name="05-SpringMVC-04-Encoding" />
         <module name="03-Spring-00-ThreeLayerApplication" />
         <module name="05-SpringMVC-02-RequestMapping" />
+        <module name="05-SpringMVC-10-FileUpload" />
         <module name="02-MyBatis-08-Binding" />
         <module name="03-Spring-10-Transaction-02-XML" />
         <module name="05-SpringMVC-05-DateConverter" />
@@ -93,6 +96,9 @@
       <module name="05-SpringMVC-07-ResponseDate" target="1.8" />
       <module name="05-SpringMVC-08-Annotation" target="1.8" />
       <module name="05-SpringMVC-09-Ajax" target="1.8" />
+      <module name="05-SpringMVC-10-FileUpload" target="1.8" />
+      <module name="06-SSM-01-Wyy" target="1.8" />
+      <module name="06-SSM-02-Wyy" target="1.8" />
       <module name="_01-ThirdLayerApplication" target="1.8" />
       <module name="a" target="1.8" />
       <module name="untitled" target="1.8" />

@@ -12,7 +12,7 @@
         </commentGenerator>
         <!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/xuesheng?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF8&amp;serverTimezone=Asia/Shanghai"
+                        connectionURL="jdbc:mysql://localhost:3306/music?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF8&amp;serverTimezone=Asia/Shanghai"
                         userId="root"
                         password="001017">
         </jdbcConnection>
@@ -25,7 +25,7 @@
 
         <!-- targetProject:生成PO类的位置 -->
         <javaModelGenerator targetPackage="com.fc.entity"
-                            targetProject=".\02-MyBatis-19-Generator\src\main\java">
+                            targetProject=".\06-SSM-01-Wyy\src\main\java">
             <!-- enableSubPackages:是否让schema作为包的后缀 -->
             <property name="enableSubPackages" value="false"/>
             <!-- 从数据库返回的值被清理前后的空格 -->
@@ -33,22 +33,21 @@
         </javaModelGenerator>
         <!-- targetProject:mapper映射文件生成的位置 -->
         <sqlMapGenerator targetPackage="com.fc.mapper"
-                         targetProject=".\02-MyBatis-19-Generator\src\main\resources">
+                         targetProject=".\06-SSM-01-Wyy\src\main\resources">
             <!-- enableSubPackages:是否让schema作为包的后缀 -->
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
         <!-- targetPackage：mapper接口生成的位置 -->
         <javaClientGenerator type="XMLMAPPER"
                              targetPackage="com.fc.dao"
-                             targetProject=".\02-MyBatis-19-Generator\src\main\java">
+                             targetProject=".\06-SSM-01-Wyy\src\main\java">
             <!-- enableSubPackages:是否让schema作为包的后缀 -->
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
         <!-- 指定数据库表 -->
-        <table schema="" tableName="student"/>
-        <table schema="" tableName="employee"/>
-        <table schema="" tableName="department"/>
-        <table schema="" tableName="user"/>
+        <table schema="" tableName="tb_music"/>
+        <table schema="" tableName="tb_sheet"/>
+
 
         <!-- 有些表的字段需要指定java类型-->
         <!--<table schema="" tableName="">-->

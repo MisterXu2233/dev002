@@ -16,7 +16,9 @@
     <file type="web" url="file://$PROJECT_DIR$/05-SpringMVC-08-Annotation" />
     <file type="web" url="file://$PROJECT_DIR$/05-SpringMVC-09-Ajax" />
     <file type="web" url="file://$PROJECT_DIR$/05-SpringMVC-10-FileUpload" />
+    <file type="web" url="file://$PROJECT_DIR$/06-FP-01" />
     <file type="web" url="file://$PROJECT_DIR$/06-SSM-01-Wyy" />
+    <file type="web" url="file://$PROJECT_DIR$/06-SSM-02-Poverty-Alleviation" />
     <file type="web" url="file://$PROJECT_DIR$/06-SSM-02-Wyy" />
     <file type="web" url="file://$PROJECT_DIR$/../dev02/00-Layui" />
   </component>
@@ -67,7 +69,8 @@
         <option value="$PROJECT_DIR$/05-SpringMVC-09-Ajax/pom.xml" />
         <option value="$PROJECT_DIR$/05-SpringMVC-10-FileUpload/pom.xml" />
         <option value="$PROJECT_DIR$/06-SSM-01-Wyy/pom.xml" />
-        <option value="$PROJECT_DIR$/06-SSM-02-Wyy/pom.xml" />
+        <option value="$PROJECT_DIR$/06-FP-01/pom.xml" />
+        <option value="$PROJECT_DIR$/06-SSM-02-Poverty-Alleviation/pom.xml" />
       </list>
     </option>
   </component>

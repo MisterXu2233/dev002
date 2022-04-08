@@ -1,5 +1,6 @@
 package com.fc.dao;
 
+import com.fc.entity.TbMusic;
 import com.fc.entity.TbSheet;
 import com.fc.entity.TbSheetExample;
 import org.apache.ibatis.annotations.Param;
@@ -7,6 +8,8 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 public interface TbSheetMapper {
+    List<TbMusic> findSongsBySheet(@Param("sheetName") String sheetName);
+
     long countByExample(TbSheetExample example);
 
     int deleteByExample(TbSheetExample example);

@@ -75,7 +75,7 @@
     id, create_time, user_id, username, picture, reply_picture
   </sql>
   <sql id="Blob_Column_List">
-    content, reply
+    `content`, `reply`
   </sql>
   <select id="selectByExampleWithBLOBs" parameterType="com.fc.entity.MessageBoardExample" resultMap="ResultMapWithBLOBs">
     select
@@ -128,12 +128,12 @@
   <insert id="insert" parameterType="com.fc.entity.MessageBoardWithBLOBs">
     insert into message_board (id, create_time, user_id, 
       username, picture, reply_picture, 
-      content, reply)
+      `content`, `reply`)
     values (#{id,jdbcType=BIGINT}, #{createTime,jdbcType=TIMESTAMP}, #{userId,jdbcType=BIGINT}, 
       #{username,jdbcType=VARCHAR}, #{picture,jdbcType=VARCHAR}, #{replyPicture,jdbcType=VARCHAR}, 
       #{content,jdbcType=LONGVARCHAR}, #{reply,jdbcType=LONGVARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.fc.entity.MessageBoardWithBLOBs">
+  <insert id="insertSelective" keyProperty="id" useGeneratedKeys="true" parameterType="com.fc.entity.MessageBoardWithBLOBs">
     insert into message_board
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -155,10 +155,10 @@
         reply_picture,
       </if>
       <if test="content != null">
-        content,
+        `content`,
       </if>
       <if test="reply != null">
-        reply,
+        `reply`,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -234,8 +234,8 @@
       username = #{record.username,jdbcType=VARCHAR},
       picture = #{record.picture,jdbcType=VARCHAR},
       reply_picture = #{record.replyPicture,jdbcType=VARCHAR},
-      content = #{record.content,jdbcType=LONGVARCHAR},
-      reply = #{record.reply,jdbcType=LONGVARCHAR}
+      `content` = #{record.content,jdbcType=LONGVARCHAR},
+      `reply` = #{record.reply,jdbcType=LONGVARCHAR}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -271,10 +271,10 @@
         reply_picture = #{replyPicture,jdbcType=VARCHAR},
       </if>
       <if test="content != null">
-        content = #{content,jdbcType=LONGVARCHAR},
+        `content` = #{content,jdbcType=LONGVARCHAR},
       </if>
       <if test="reply != null">
-        reply = #{reply,jdbcType=LONGVARCHAR},
+        `reply` = #{reply,jdbcType=LONGVARCHAR},
       </if>
     </set>
     where id = #{id,jdbcType=BIGINT}
@@ -286,8 +286,8 @@
       username = #{username,jdbcType=VARCHAR},
       picture = #{picture,jdbcType=VARCHAR},
       reply_picture = #{replyPicture,jdbcType=VARCHAR},
-      content = #{content,jdbcType=LONGVARCHAR},
-      reply = #{reply,jdbcType=LONGVARCHAR}
+      `content` = #{content,jdbcType=LONGVARCHAR},
+      `reply` = #{reply,jdbcType=LONGVARCHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.fc.entity.MessageBoard">

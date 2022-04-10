@@ -2,8 +2,10 @@ package com.fc.dao;
 
 import com.fc.entity.Alleviation;
 import com.fc.entity.AlleviationExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.Date;
+import java.util.List;
 
 public interface AlleviationMapper {
     long countByExample(AlleviationExample example);
@@ -33,4 +35,7 @@ public interface AlleviationMapper {
     int updateByPrimaryKeyWithBLOBs(Alleviation record);
 
     int updateByPrimaryKey(Alleviation record);
+
+    //点击量加1
+    Integer click(@Param("id") Long id, @Param("lastClickTime") Date lastClickTime);
 }

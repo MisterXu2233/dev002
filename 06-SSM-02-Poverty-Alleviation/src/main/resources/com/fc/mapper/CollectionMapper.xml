@@ -113,7 +113,7 @@
       #{picture,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR}, #{recommendType,jdbcType=VARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.fc.entity.Collection">
+  <insert id="insertSelective" keyProperty="id" useGeneratedKeys="true" parameterType="com.fc.entity.Collection">
     insert into collection
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">

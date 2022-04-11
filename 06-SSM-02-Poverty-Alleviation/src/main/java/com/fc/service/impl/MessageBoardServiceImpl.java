@@ -1,7 +1,6 @@
 package com.fc.service.impl;
 
 import com.fc.dao.MessageBoardMapper;
-import com.fc.entity.MessageBoard;
 import com.fc.entity.MessageBoardWithBLOBs;
 import com.fc.service.MessageBoardService;
 import com.fc.vo.DateVO;
@@ -26,29 +25,29 @@ public class MessageBoardServiceImpl implements MessageBoardService {
         ResultVO resultVO;
 
         // 分页相关的参数
-        DateVO<MessageBoard> userDateVO;
+        DateVO<MessageBoardWithBLOBs> userDateVO;
 
         //结果中data对应的用户数组
-        List<MessageBoard> messageBoards;
+        List<MessageBoardWithBLOBs> messageBoard;
 
         //说明传递了id,那就是findById
         if (id != null) {
-            messageBoards = new ArrayList<>();
+            messageBoard = new ArrayList<>();
 
             //查询
-            MessageBoard messageBoard = messageBoardMapper.selectByPrimaryKey(id);
+            MessageBoardWithBLOBs messageBoards = messageBoardMapper.selectByPrimaryKey(id);
 
             //没有查到用户的情况
             if(messageBoard == null) {
-                userDateVO = new DateVO<>(0L,messageBoards,pageNum,pageSize);
+                userDateVO = new DateVO<>(0L,messageBoard,pageNum,pageSize);
 
                 resultVO = new ResultVO(4000,"查询无此留言",false,userDateVO);
 
             } else {
                 //查到了用户扔到集合中
-                messageBoards.add(messageBoard);
+                messageBoard.add(messageBoards);
 
-                userDateVO = new DateVO<>(1L,messageBoards,pageNum,pageSize);
+                userDateVO = new DateVO<>(1L,messageBoard,pageNum,pageSize);
 
                 resultVO = new ResultVO(1000,"查到了该用户",true,userDateVO);
 
@@ -57,11 +56,11 @@ public class MessageBoardServiceImpl implements MessageBoardService {
             //开启分页
             PageHelper.startPage(pageNum,pageSize);
 
-            messageBoards = messageBoardMapper.selectByExample(null);
+            messageBoard = messageBoardMapper.selectByExampleWithBLOBs(null);
 
             //如果数据库是空的，一个人都没查到
-            if (messageBoards.size() == 0) {
-                userDateVO = new DateVO<>(0L,messageBoards,pageNum,pageSize);
+            if (messageBoard.size() == 0) {
+                userDateVO = new DateVO<>(0L,messageBoard,pageNum,pageSize);
 
                 resultVO = new ResultVO(4100,"没有用户",false,userDateVO);
 
@@ -69,9 +68,9 @@ public class MessageBoardServiceImpl implements MessageBoardService {
             } else {
 
                 //封装pageInfo,为了获取总数据量
-                PageInfo<MessageBoard> pageInfo = new PageInfo<>(messageBoards);
+                PageInfo<MessageBoardWithBLOBs> pageInfo = new PageInfo<>(messageBoard);
 
-                userDateVO = new DateVO<>(pageInfo.getTotal(),messageBoards,pageNum,pageSize);
+                userDateVO = new DateVO<>(pageInfo.getTotal(),messageBoard,pageNum,pageSize);
 
                 resultVO = new ResultVO(1100,"用户查询成功",true,userDateVO);
 

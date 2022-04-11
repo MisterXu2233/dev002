@@ -1,7 +1,6 @@
 package com.fc.service.impl;
 
 import com.fc.dao.PoorMapper;
-import com.fc.entity.Poor;
 import com.fc.entity.PoorWithBLOBs;
 import com.fc.service.PoorService;
 import com.fc.vo.DateVO;
@@ -26,29 +25,29 @@ public class PoorServiceImpl implements PoorService {
         ResultVO resultVO;
 
         // 分页相关的参数
-        DateVO<Poor> userDateVO;
+        DateVO<PoorWithBLOBs> userDateVO;
 
         //结果中data对应的用户数组
-        List<Poor> poors;
+        List<PoorWithBLOBs> poor;
 
         //说明传递了id,那就是findById
         if (id != null) {
-            poors = new ArrayList<>();
+            poor = new ArrayList<>();
 
             //查询
-            Poor poor = poorMapper.selectByPrimaryKey(id);
+            PoorWithBLOBs poorWithBLOBs = poorMapper.selectByPrimaryKey(id);
 
             //没有查到用户的情况
-            if(poor == null) {
-                userDateVO = new DateVO<>(0L,poors,pageNum,pageSize);
+            if(poorWithBLOBs == null) {
+                userDateVO = new DateVO<>(0L,poor,pageNum,pageSize);
 
                 resultVO = new ResultVO(4000,"查询无此贫困户",false,userDateVO);
 
             } else {
                 //查到了用户扔到集合中
-                poors.add(poor);
+                poor.add(poorWithBLOBs);
 
-                userDateVO = new DateVO<>(1L,poors,pageNum,pageSize);
+                userDateVO = new DateVO<>(1L,poor,pageNum,pageSize);
 
                 resultVO = new ResultVO(1000,"查到了该贫困户",true,userDateVO);
 
@@ -57,11 +56,11 @@ public class PoorServiceImpl implements PoorService {
             //开启分页
             PageHelper.startPage(pageNum,pageSize);
 
-            poors = poorMapper.selectByExample(null);
+            poor = poorMapper.selectByExampleWithBLOBs(null);
 
             //如果数据库是空的，一个人都没查到
-            if (poors.size() == 0) {
-                userDateVO = new DateVO<>(0L,poors,pageNum,pageSize);
+            if (poor.size() == 0) {
+                userDateVO = new DateVO<>(0L,poor,pageNum,pageSize);
 
                 resultVO = new ResultVO(4100,"没有贫困户",false,userDateVO);
 
@@ -69,9 +68,9 @@ public class PoorServiceImpl implements PoorService {
             } else {
 
                 //封装pageInfo,为了获取总数据量
-                PageInfo<Poor> pageInfo = new PageInfo<>(poors);
+                PageInfo<PoorWithBLOBs> pageInfo = new PageInfo<>(poor);
 
-                userDateVO = new DateVO<>(pageInfo.getTotal(),poors,pageNum,pageSize);
+                userDateVO = new DateVO<>(pageInfo.getTotal(),poor,pageNum,pageSize);
 
                 resultVO = new ResultVO(1100,"用户查询成功",true,userDateVO);
 

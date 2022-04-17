@@ -56,7 +56,7 @@ public class AlleviationServiceImpl implements AlleviationService {
 
                 dateVO = new DateVO<>(1L,alleviations,pageNum,pageSize);
 
-                resultVO = new ResultVO(1000,"查到了该政策",true,dateVO);
+                resultVO = new ResultVO(200,"查到了该政策",true,dateVO);
 
             }
         } else {
@@ -79,7 +79,7 @@ public class AlleviationServiceImpl implements AlleviationService {
 
                 dateVO = new DateVO<>(pageInfo.getTotal(),alleviations,pageNum,pageSize);
 
-                resultVO = new ResultVO(1100,"扶贫政策查询成功",true,dateVO);
+                resultVO = new ResultVO(200,"扶贫政策查询成功",true,dateVO);
 
             }
 
@@ -104,7 +104,7 @@ public class AlleviationServiceImpl implements AlleviationService {
         int affectedRows = alleviationMapper.insertSelective(alleviation);
 
         if (affectedRows > 0) {
-            vo = new ResultVO(1000,"添加政策成功",true,alleviation);
+            vo = new ResultVO(200,"添加政策成功",true,alleviation);
         } else {
             vo = new ResultVO(5000,"添加政策失败",false,null);
 
@@ -123,7 +123,7 @@ public class AlleviationServiceImpl implements AlleviationService {
             //修改完成之后，在重新查询一次，保证返回给前端的是最全的数据
             alleviation = alleviationMapper.selectByPrimaryKey(alleviation.getId());
 
-            vo = new ResultVO(1000,"修改政策成功",true,alleviation);
+            vo = new ResultVO(200,"修改政策成功",true,alleviation);
         } else {
             vo = new ResultVO(5000,"修改政策失败",false,null );
 
@@ -140,7 +140,7 @@ public class AlleviationServiceImpl implements AlleviationService {
 
         if (affectedRows > 0) {
 
-            vo = new ResultVO(1000,"删除政策成功",true,null);
+            vo = new ResultVO(200,"删除政策成功",true,null);
         } else {
             vo = new ResultVO(5000,"删除政策失败",false,null );
 
@@ -161,7 +161,7 @@ public class AlleviationServiceImpl implements AlleviationService {
 
         if (affectedRows > 0) {
 
-            vo = new ResultVO(1000,"播放量加1成功",true,null);
+            vo = new ResultVO(200,"播放量加1成功",true,null);
         } else {
             vo = new ResultVO(5000,"播放量加1失败",false,null );
 

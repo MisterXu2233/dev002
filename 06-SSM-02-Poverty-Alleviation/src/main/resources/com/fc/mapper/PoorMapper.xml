@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.fc.dao.PoorMapper">
+  <!--点击量加1-->
+  <update id="click">
+    update poor
+    set click_num = click_num + 1,
+        last_click_time = #{lastClickTime}
+    where id = #{id}
+  </update>
   <resultMap id="BaseResultMap" type="com.fc.entity.Poor">
     <id column="id" jdbcType="BIGINT" property="id" />
     <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />

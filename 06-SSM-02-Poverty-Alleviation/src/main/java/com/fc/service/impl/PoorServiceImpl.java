@@ -72,7 +72,7 @@ public class PoorServiceImpl implements PoorService {
 
                 userDateVO = new DateVO<>(pageInfo.getTotal(),poor,pageNum,pageSize);
 
-                resultVO = new ResultVO(1100,"用户查询成功",true,userDateVO);
+                resultVO = new ResultVO(200,"用户查询成功",true,userDateVO);
 
             }
 
@@ -93,7 +93,7 @@ public class PoorServiceImpl implements PoorService {
         int affectedRows = poorMapper.insertSelective(poor);
 
         if (affectedRows > 0) {
-            vo = new ResultVO(1000,"添加贫困户成功",true,poor);
+            vo = new ResultVO(200,"添加贫困户成功",true,poor);
         } else {
             vo = new ResultVO(5000,"添加贫困户失败",false,null);
 
@@ -112,7 +112,7 @@ public class PoorServiceImpl implements PoorService {
             //修改完成之后，在重新查询一次，保证返回给前端的是最全的数据
             poor = poorMapper.selectByPrimaryKey(poor.getId());
 
-            vo = new ResultVO(1000,"修改贫困户成功",true,poor);
+            vo = new ResultVO(200,"修改贫困户成功",true,poor);
         } else {
             vo = new ResultVO(5000,"修改贫困户失败",false,null );
 
@@ -129,9 +129,30 @@ public class PoorServiceImpl implements PoorService {
 
         if (affectedRows > 0) {
 
-            vo = new ResultVO(1000,"删除贫困户成功",true,null);
+            vo = new ResultVO(200,"删除贫困户成功",true,null);
         } else {
             vo = new ResultVO(5000,"删除贫困户失败",false,null );
+
+        }
+
+        return vo;
+    }
+
+    @Override
+    public ResultVO click(Long id, Date lastClickTime) {
+        if (lastClickTime == null) {
+            lastClickTime = new Date();
+        }
+
+        Integer affectedRows = poorMapper.click(id,lastClickTime);
+
+        ResultVO vo;
+
+        if (affectedRows > 0) {
+
+            vo = new ResultVO(200,"点击量加1成功",true,null);
+        } else {
+            vo = new ResultVO(5000,"点击量加1失败",false,null );
 
         }
 

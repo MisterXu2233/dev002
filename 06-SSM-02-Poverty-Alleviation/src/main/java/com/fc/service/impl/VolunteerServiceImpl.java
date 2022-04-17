@@ -34,7 +34,7 @@ public class VolunteerServiceImpl implements VolunteerService {
 
         if (affectedRows > 0) {
 
-            vo = new ResultVO(1000,"招聘扶贫志愿者浏览量加1成功",true,null);
+            vo = new ResultVO(200,"招聘扶贫志愿者浏览量加1成功",true,null);
         } else {
             vo = new ResultVO(5000,"招聘扶贫志愿者浏览量加1失败",false,null );
 
@@ -79,7 +79,7 @@ public class VolunteerServiceImpl implements VolunteerService {
 
                 dateVO = new DateVO<>(1L,volunteers,pageNum,pageSize);
 
-                resultVO = new ResultVO(1000,"查到了该招聘信息",true,dateVO);
+                resultVO = new ResultVO(200,"查到了该招聘信息",true,dateVO);
 
             }
         } else {
@@ -102,7 +102,7 @@ public class VolunteerServiceImpl implements VolunteerService {
 
                 dateVO = new DateVO<>(pageInfo.getTotal(),volunteers,pageNum,pageSize);
 
-                resultVO = new ResultVO(1100,"志愿者招聘信息查询成功",true,dateVO);
+                resultVO = new ResultVO(200,"志愿者招聘信息查询成功",true,dateVO);
 
             }
 
@@ -146,7 +146,7 @@ public class VolunteerServiceImpl implements VolunteerService {
             //修改完成之后，在重新查询一次，保证返回给前端的是最全的数据
             volunteer = volunteerMapper.selectByPrimaryKey(volunteer.getId());
 
-            vo = new ResultVO(1000,"修改志愿者招聘信息成功",true,volunteer);
+            vo = new ResultVO(200,"修改志愿者招聘信息成功",true,volunteer);
         } else {
             vo = new ResultVO(5000,"修改志愿者招聘信息失败",false,null );
 
@@ -163,7 +163,7 @@ public class VolunteerServiceImpl implements VolunteerService {
 
         if (affectedRows > 0) {
 
-            vo = new ResultVO(1000,"删除志愿者招聘信息成功",true,null);
+            vo = new ResultVO(200,"删除志愿者招聘信息成功",true,null);
         } else {
             vo = new ResultVO(5000,"删除志愿者招聘信息失败",false,null );
 

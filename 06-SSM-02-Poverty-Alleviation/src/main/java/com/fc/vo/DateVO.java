@@ -13,5 +13,6 @@ public class DateVO<T> {
     private  Long total;
     private List<T> list;
     private Integer pageNum;
+
     private Integer pageSize;
 }

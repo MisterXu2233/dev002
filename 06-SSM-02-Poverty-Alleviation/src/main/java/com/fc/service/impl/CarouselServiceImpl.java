@@ -50,7 +50,7 @@ public class CarouselServiceImpl implements CarouselService {
 
                 carouselDateVO = new DateVO<>(1L,carousels,pageNum,pageSize);
 
-                resultVO = new ResultVO(1000,"查到了该图",true,carouselDateVO);
+                resultVO = new ResultVO(200,"查到了该图",true,carouselDateVO);
 
             }
         } else {
@@ -73,7 +73,7 @@ public class CarouselServiceImpl implements CarouselService {
 
                 carouselDateVO = new DateVO<>(pageInfo.getTotal(),carousels,pageNum,pageSize);
 
-                resultVO = new ResultVO(1100,"轮播图查询成功",true,carouselDateVO);
+                resultVO = new ResultVO(200,"轮播图查询成功",true,carouselDateVO);
 
             }
 
@@ -95,7 +95,7 @@ public class CarouselServiceImpl implements CarouselService {
         int affectedRows = carouselMapper.insertSelective(carousel);
 
         if (affectedRows > 0) {
-            vo = new ResultVO(1000,"添加图片成功",true,carousel);
+            vo = new ResultVO(200,"添加图片成功",true,carousel);
         } else {
             vo = new ResultVO(5000,"添加图片失败",false,null);
 
@@ -114,7 +114,7 @@ public class CarouselServiceImpl implements CarouselService {
             //修改完成之后，在重新查询一次，保证返回给前端的是最全的数据
             carousel = carouselMapper.selectByPrimaryKey(carousel.getId());
 
-            vo = new ResultVO(1000,"修改图片成功",true,carousel);
+            vo = new ResultVO(200,"修改图片成功",true,carousel);
         } else {
             vo = new ResultVO(5000,"修改图片失败",false,null );
 
@@ -131,7 +131,7 @@ public class CarouselServiceImpl implements CarouselService {
 
         if (affectedRows > 0) {
 
-            vo = new ResultVO(1000,"删除图片成功",true,null);
+            vo = new ResultVO(200,"删除图片成功",true,null);
         } else {
             vo = new ResultVO(5000,"删除图片失败",false,null );
 
@@ -149,7 +149,7 @@ public class CarouselServiceImpl implements CarouselService {
 
         if (affectedRows > 0) {
 
-            vo = new ResultVO(1000,"修改了当前的状态成功",true,null);
+            vo = new ResultVO(200,"修改了当前的状态成功",true,null);
         } else {
             vo = new ResultVO(5000,"修改了当前的状态失败",false,null );
 

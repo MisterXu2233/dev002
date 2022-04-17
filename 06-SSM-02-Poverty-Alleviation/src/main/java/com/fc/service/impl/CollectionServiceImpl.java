@@ -50,7 +50,7 @@ public class CollectionServiceImpl implements CollectionService {
 
                 userDateVO = new DateVO<>(1L,collections,pageNum,pageSize);
 
-                resultVO = new ResultVO(1000,"查到了此收藏表",true,userDateVO);
+                resultVO = new ResultVO(200,"查到了此收藏表",true,userDateVO);
 
             }
         } else {
@@ -73,7 +73,7 @@ public class CollectionServiceImpl implements CollectionService {
 
                 userDateVO = new DateVO<>(pageInfo.getTotal(),collections,pageNum,pageSize);
 
-                resultVO = new ResultVO(1100,"收藏表查询成功",true,userDateVO);
+                resultVO = new ResultVO(200,"收藏表查询成功",true,userDateVO);
 
             }
 
@@ -94,7 +94,7 @@ public class CollectionServiceImpl implements CollectionService {
         int affectedRows = collectionMapper.insertSelective(collection);
 
         if (affectedRows > 0) {
-            vo = new ResultVO(1000,"添加收藏表成功",true,collection);
+            vo = new ResultVO(200,"添加收藏表成功",true,collection);
         } else {
             vo = new ResultVO(5000,"添加收藏表失败",false,null);
 
@@ -113,7 +113,7 @@ public class CollectionServiceImpl implements CollectionService {
             //修改完成之后，在重新查询一次，保证返回给前端的是最全的数据
             collection = collectionMapper.selectByPrimaryKey(collection.getId());
 
-            vo = new ResultVO(1000,"修改收藏表成功",true,collection);
+            vo = new ResultVO(200,"修改收藏表成功",true,collection);
         } else {
             vo = new ResultVO(5000,"修改收藏表失败",false,null );
 
@@ -130,7 +130,7 @@ public class CollectionServiceImpl implements CollectionService {
 
         if (affectedRows > 0) {
 
-            vo = new ResultVO(1000,"删除收藏表成功",true,null);
+            vo = new ResultVO(200,"删除收藏表成功",true,null);
         } else {
             vo = new ResultVO(5000,"删除收藏表失败",false,null );
 

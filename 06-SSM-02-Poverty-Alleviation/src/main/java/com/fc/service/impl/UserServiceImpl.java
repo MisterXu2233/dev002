@@ -49,7 +49,7 @@ public class UserServiceImpl implements UserService {
 
                 userDateVO = new DateVO<>(1L,users,pageNum,pageSize);
 
-                resultVO = new ResultVO(1000,"查到了该用户",true,userDateVO);
+                resultVO = new ResultVO(200,"查到了该用户",true,userDateVO);
 
             }
         } else {
@@ -72,7 +72,7 @@ public class UserServiceImpl implements UserService {
 
                 userDateVO = new DateVO<>(pageInfo.getTotal(),users,pageNum,pageSize);
 
-                resultVO = new ResultVO(1100,"用户查询成功",true,userDateVO);
+                resultVO = new ResultVO(200,"用户查询成功",true,userDateVO);
 
             }
 
@@ -93,7 +93,7 @@ public class UserServiceImpl implements UserService {
         int affectedRows = userMapper.insertSelective(user);
 
         if (affectedRows > 0) {
-            vo = new ResultVO(1000,"添加用户成功",true,user);
+            vo = new ResultVO(200,"添加用户成功",true,user);
         } else {
             vo = new ResultVO(5000,"添加用户失败",false,null);
 
@@ -112,7 +112,7 @@ public class UserServiceImpl implements UserService {
             //修改完成之后，在重新查询一次，保证返回给前端的是最全的数据
             user = userMapper.selectByPrimaryKey(user.getId());
 
-            vo = new ResultVO(1000,"修改用户成功",true,user);
+            vo = new ResultVO(200,"修改用户成功",true,user);
         } else {
             vo = new ResultVO(5000,"修改用户失败",false,null );
 
@@ -129,7 +129,7 @@ public class UserServiceImpl implements UserService {
 
         if (affectedRows > 0) {
 
-            vo = new ResultVO(1000,"删除用户成功",true,null);
+            vo = new ResultVO(200,"删除用户成功",true,null);
         } else {
             vo = new ResultVO(5000,"删除用户失败",false,null );
 

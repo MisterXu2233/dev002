@@ -49,7 +49,7 @@ public class MessageBoardServiceImpl implements MessageBoardService {
 
                 userDateVO = new DateVO<>(1L,messageBoard,pageNum,pageSize);
 
-                resultVO = new ResultVO(1000,"查到了该用户",true,userDateVO);
+                resultVO = new ResultVO(200,"查到了该用户",true,userDateVO);
 
             }
         } else {
@@ -72,7 +72,7 @@ public class MessageBoardServiceImpl implements MessageBoardService {
 
                 userDateVO = new DateVO<>(pageInfo.getTotal(),messageBoard,pageNum,pageSize);
 
-                resultVO = new ResultVO(1100,"用户查询成功",true,userDateVO);
+                resultVO = new ResultVO(200,"用户查询成功",true,userDateVO);
 
             }
 
@@ -93,7 +93,7 @@ public class MessageBoardServiceImpl implements MessageBoardService {
         int affectedRows = messageBoardMapper.insertSelective(messageBoard);
 
         if (affectedRows > 0) {
-            vo = new ResultVO(1000,"添加留言成功",true,messageBoard);
+            vo = new ResultVO(200,"添加留言成功",true,messageBoard);
         } else {
             vo = new ResultVO(5000,"添加留言失败",false,null);
 
@@ -129,7 +129,7 @@ public class MessageBoardServiceImpl implements MessageBoardService {
 
         if (affectedRows > 0) {
 
-            vo = new ResultVO(1000,"删除留言成功",true,null);
+            vo = new ResultVO(200,"删除留言成功",true,null);
         } else {
             vo = new ResultVO(5000,"删除留言失败",false,null );
 

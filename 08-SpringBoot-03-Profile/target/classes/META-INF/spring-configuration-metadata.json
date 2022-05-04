@@ -1,0 +1,52 @@
+{
+  "groups": [
+    {
+      "name": "student",
+      "type": "com.fc.entity.Father",
+      "sourceType": "com.fc.entity.Father"
+    },
+    {
+      "name": "student",
+      "type": "com.fc.entity.GrandPa",
+      "sourceType": "com.fc.entity.GrandPa"
+    },
+    {
+      "name": "student",
+      "type": "com.fc.entity.Son",
+      "sourceType": "com.fc.entity.Son"
+    }
+  ],
+  "properties": [
+    {
+      "name": "student.age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.fc.entity.Father"
+    },
+    {
+      "name": "student.age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.fc.entity.GrandPa"
+    },
+    {
+      "name": "student.age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.fc.entity.Son"
+    },
+    {
+      "name": "student.name",
+      "type": "java.lang.String",
+      "sourceType": "com.fc.entity.Father"
+    },
+    {
+      "name": "student.name",
+      "type": "java.lang.String",
+      "sourceType": "com.fc.entity.GrandPa"
+    },
+    {
+      "name": "student.name",
+      "type": "java.lang.String",
+      "sourceType": "com.fc.entity.Son"
+    }
+  ],
+  "hints": []
+}

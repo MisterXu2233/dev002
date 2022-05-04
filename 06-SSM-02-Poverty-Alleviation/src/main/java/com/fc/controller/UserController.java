@@ -13,6 +13,11 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    @PostMapping("login")
+    public ResultVO login(@RequestParam  String username,
+                          @RequestParam String password) {
+        return userService.login(username,password);
+    }
 
     @GetMapping("getlist")
     public ResultVO getlist(@RequestParam(value = "pageNum") Integer pageNum,

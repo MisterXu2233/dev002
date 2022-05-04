@@ -20,6 +20,7 @@
     <file type="web" url="file://$PROJECT_DIR$/06-SSM-01-Wyy" />
     <file type="web" url="file://$PROJECT_DIR$/06-SSM-02-Poverty-Alleviation" />
     <file type="web" url="file://$PROJECT_DIR$/06-SSM-02-Wyy" />
+    <file type="web" url="file://$PROJECT_DIR$/06-SSM-03-Diary" />
     <file type="web" url="file://$PROJECT_DIR$/../dev02/00-Layui" />
   </component>
   <component name="MavenProjectsManager">
@@ -71,6 +72,17 @@
         <option value="$PROJECT_DIR$/06-SSM-01-Wyy/pom.xml" />
         <option value="$PROJECT_DIR$/06-FP-01/pom.xml" />
         <option value="$PROJECT_DIR$/06-SSM-02-Poverty-Alleviation/pom.xml" />
+        <option value="$PROJECT_DIR$/08-SpringBoot-00-Starter/pom.xml" />
+        <option value="$PROJECT_DIR$/06-SSM-03-Diary/pom.xml" />
+        <option value="$PROJECT_DIR$/08-SpringBoot-01-Starter/pom.xml" />
+        <option value="$PROJECT_DIR$/08-SpringBoot-03-Profile/pom.xml" />
+        <option value="$PROJECT_DIR$/08-SpringBoot-18-Junit5/pom.xml" />
+        <option value="$PROJECT_DIR$/08-SpringBoot-04-Annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/08-SpringBoot-05-Conditional/pom.xml" />
+        <option value="$PROJECT_DIR$/08-SpringBoot-06-StaticResources/pom.xml" />
+        <option value="$PROJECT_DIR$/08-SpringBoot-07-JSP/pom.xml" />
+        <option value="$PROJECT_DIR$/08-SpringBoot-08-JdbcTemplate/pom.xml" />
+        <option value="$PROJECT_DIR$/09-SpringBoot-01-Cloud-Diary-01/pom.xml" />
       </list>
     </option>
   </component>

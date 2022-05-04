@@ -1,0 +1,9 @@
+# 生产环境的配置
+server:
+  port: 8888
+  servlet:
+    context-path: /protuct
+
+student:
+  name: 圣诞节
+  age: 306

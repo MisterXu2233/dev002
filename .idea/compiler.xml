@@ -26,7 +26,6 @@
         <module name="03-Spring-07-DI-03-ComplexType" />
         <module name="03-Spring-09-Aop-01-XML" />
         <module name="03-Spring-03-CreateBean" />
-        <module name="02-MyBatis-11-ORM" />
         <module name="02-MyBatis-18-Lazy" />
         <module name="08-SpringBoot-08-JdbcTemplate" />
         <module name="03-Spring-01-Start" />

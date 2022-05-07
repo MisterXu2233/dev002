@@ -2,8 +2,10 @@ package com.fc.dao;
 
 import com.fc.entity.TbNote;
 import com.fc.entity.TbNoteExample;
-import java.util.List;
+import com.fc.vo.NoteVO;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface TbNoteMapper {
     long countByExample(TbNoteExample example);
@@ -33,4 +35,13 @@ public interface TbNoteMapper {
     int updateByPrimaryKeyWithBLOBs(TbNote record);
 
     int updateByPrimaryKey(TbNote record);
+
+    // 根据用户id获取所有的日记
+    List<TbNote> findNoteByUserId(@Param("userId") Integer userId, @Param("typeId") Integer typeId, @Param("title") String title, @Param("date") String date);
+
+    // 根据用户id获取分类的日期
+    List<NoteVO> findCountByDate(Integer userId);
+
+    // 根据用户id获取分类的类别
+    List<NoteVO> findCountByType(Integer userId);
 }

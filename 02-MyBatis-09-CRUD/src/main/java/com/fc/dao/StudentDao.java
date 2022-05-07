@@ -7,6 +7,8 @@ import java.util.List;
 
 public interface StudentDao {
 
+
+
     //增
     int insert(Student student);
 

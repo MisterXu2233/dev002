@@ -1,4 +1,4 @@
- spring:
+spring:
   mvc:
     pathmatch:
       # springboot2.6.X用的是PATH_PATTERN_PARSER
